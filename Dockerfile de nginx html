@@ -1,0 +1,8 @@
+# Usa una imagen base ligera de nginx
+FROM nginx:latest
+
+# Copia el archivo HTML al directorio de contenido estático de Nginx
+COPY index.html /usr/share/nginx/html/
+
+# Exponer el puerto 80 para que la aplicación sea accesible
+EXPOSE 80

@@ -1,0 +1,8 @@
+# Utiliza la imagen oficial de MySQL
+FROM mysql:latest
+
+# Establece la contraseña de root como una variable de entorno
+ENV MYSQL_ROOT_PASSWORD=your-root-password
+
+# Expone el puerto 3306
+EXPOSE 3306
